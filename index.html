@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Amapolas</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #FFF8F2;
+            color: #5A3A29;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #FFA07A;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Navegación */
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            background-color: #FFDAB9;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li:hover {
+            background-color: #FFB6C1;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            color: #5A3A29;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #FFA07A;
+            color: #FFFFFF;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>CAFETERÍA AMAPOLAS</header>
+
+    <nav>
+        <ul>
+            <li><a href="alimentos.html" onclick="navigateTo(event, 'alimentos.html')">Alimentos</a></li>
+            <li><a href="bebidas.html" onclick="navigateTo(event, 'bebidas.html')">Bebidas</a></li>
+            <li><a href="promociones.html" onclick="navigateTo(event, 'promociones.html')">Promociones</a></li>
+            <li><a href="nosotros.html" onclick="navigateTo(event, 'nosotros.html')">Nosotros</a></li>
+            <li><a href="blog.html" onclick="navigateTo(event, 'blog.html')">Blog</a></li>
+            <li><a href="novedades.html" onclick="navigateTo(event, 'novedades.html')">Novedades</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        &copy; 2023 Cafetería Amapolas. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function navigateTo(event, page) {
+            event.preventDefault();
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
